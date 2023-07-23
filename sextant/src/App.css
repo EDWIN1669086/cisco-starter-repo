@@ -1,38 +1,40 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+.nav-title {
+    font-size: 1.5em;
+    font-weight: 700;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-container {
+    padding: 25px 35px;
+    display: flex;
+    justify-content: space-between;
+    background-color: lightblue;
+    align-items: center;
+    font-family: 'DM Sans', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-container ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.nav-container li {
+    padding: 0 20px;
+
 }
 
-.App-link {
-  color: #61dafb;
+.nav-container li a {
+    text-decoration: none;
+    color:navy;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-container li a:hover {
+    text-decoration: underline;
+}
+
+.body {
+    padding: 25px 35px;
 }
