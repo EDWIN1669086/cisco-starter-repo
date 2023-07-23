@@ -1,5 +1,4 @@
 import './App.css';
-import Banner from './components/Banner';
 import { Routes, Route, NavLink} from 'react-router-dom';
 
 import Home from './pages/Home';
@@ -28,14 +27,14 @@ function App() {
           </li>
         </ul>
       </nav>
-      <body className="body">
+      <div className="body">
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/page1" element={<Page1/>}/>
           <Route path="/page2" element={<Page2/>}/>
           <Route path="/page3" element={<Page3/>}/>
         </Routes>
-      </body>
+      </div>
     </>
   );
 }
